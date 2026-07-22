@@ -33,6 +33,7 @@ jobs:
         run: bun run build:static
         env:
           NEXT_PUBLIC_PROXY_URL: ''
+          NEXT_PUBLIC_STATIC_EXPORT: '1'
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
